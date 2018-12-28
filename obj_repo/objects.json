@@ -1,0 +1,32 @@
+{
+
+	"h3utestSite": "https://www.h3u.com/itgi/#!/login/",
+
+	"loginPageLocators": {
+		"policynumber": "logindata.loginid",
+		"password": "pwd",
+		"login": "Log In"		
+	},
+
+	"loginPageData": {
+		"policynumber": "12345",
+		"password": "1234567"
+	},
+
+	"homePageLocators": {
+		"logoutText": "//*[@id='slidemenu']/ul/li[8]/a",
+		"healthCard": "//*[@class='dashboard-container ng-scope']//*[text()='HEALTH CARD']"
+	},
+
+	"healthCardDetailsLocators":{
+		"policynumber": "//*[@id='printSectionId']/div[1]//div[4]/div[2]",
+		"validdate": "//*[@id='printSectionId']/div[1]//div[5]/div[2]",
+		"policyholder": "//*[@id='printSectionId']/div[1]//div[6]/div[2]",
+		"relation": "//*[@id='printSectionId']/div[1]//div[7]/div[2]"
+	},
+
+	"homePageValidations": {
+		"logout": "Logout"
+	}
+
+}
