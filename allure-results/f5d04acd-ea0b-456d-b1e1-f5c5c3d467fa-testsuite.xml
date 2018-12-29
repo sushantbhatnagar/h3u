@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1546093324321' stop='1546093353403'>
+    <name>Login to h3u application</name>
+    <title>Login to h3u application</title>
+    <test-cases>
+        <test-case start='1546093324322' status='passed' stop='1546093353402'>
+            <name>Login to h3u successfully</name>
+            <title>Login to h3u successfully</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='8ea56814-49c4-4b8c-ac71-df41a10020d5-attachment.png' type='image/png' size='6538'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1546093353418' stop='1546093450276'>
+    <name>Home Page Validations</name>
+    <title>Home Page Validations</title>
+    <test-cases>
+        <test-case start='1546093353418' status='passed' stop='1546093397980'>
+            <name>Able to view the healthcard details of a patient</name>
+            <title>Able to view the healthcard details of a patient</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='32c5a18a-e0de-4ad3-b1ec-5149cf140427-attachment.png' type='image/png' size='6538'/>
+            </attachments>
+        </test-case>
+        <test-case start='1546093397980' status='passed' stop='1546093450275'>
+            <name>Validate the details of the policyholder</name>
+            <title>Validate the details of the policyholder</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='92968d7b-ad36-426e-b024-1f3284bf9218-attachment.png' type='image/png' size='6538'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -4,11 +4,13 @@
   "description": "Healthcare Project",
   "main": "conf.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "posttest": "allure generate allure-results --clean -o allure-report"
   },
   "author": "SushantBhatnagar",
   "license": "ISC",
   "devDependencies": {
+    "allure-commandline": "^2.8.1",
     "jasmine-allure-reporter": "^1.0.2",
     "jasmine-reporters": "~2.0.0",
     "protractor": "^5.4.2",
@@ -20,6 +22,7 @@
   },
   "dependencies": {
     "path": "^0.12.7",
-    "promise": "^7.0.4"
+    "promise": "^7.0.4",
+    "jasmine-allure-reporter": "^1.0.2"
   }
 }
