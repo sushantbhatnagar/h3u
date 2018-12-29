@@ -37,7 +37,7 @@ describe('Home Page Validations', function(){
 		});
 
 		element(by.xpath(Objects.healthCardDetailsLocators.relation)).getText().then(function(relation){
-			expect(relation.replace(': ','')).toEqual('Selfie');
+			expect(relation.replace(': ','')).toEqual('Self');
 		});
 
 		element(by.xpath(Objects.healthCardDetailsLocators.validdate)).getText().then(function(date){
