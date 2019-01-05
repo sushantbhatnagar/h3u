@@ -15,7 +15,8 @@
 
 	"homePageLocators": {
 		"logoutText": "//*[@id='slidemenu']/ul/li[8]/a",
-		"healthCard": "//*[@class='dashboard-container ng-scope']//*[text()='HEALTH CARD']"
+		"healthCard": "//*[@class='dashboard-container ng-scope']//*[text()='HEALTH CARD']",
+		"toolsTrackers": "//*[@class='dashboard-container ng-scope']//*[text()='TOOLS & TRACKERS']"
 	},
 
 	"healthCardDetailsLocators":{
@@ -23,6 +24,14 @@
 		"validdate": "//*[@id='printSectionId']/div[1]//div[5]/div[2]",
 		"policyholder": "//*[@id='printSectionId']/div[1]//div[6]/div[2]",
 		"relation": "//*[@id='printSectionId']/div[1]//div[7]/div[2]"
+	},
+
+	"toolsTrackersPageLocators":{
+		"member": "selectedMember"
+	},
+
+	"toolsTrackersPageValidations":{
+		"memberName": "Sudhir  Mittali"
 	},
 
 	"homePageValidations": {
