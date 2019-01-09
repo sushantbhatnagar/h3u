@@ -24,7 +24,7 @@ describe('Home Page Validations', function(){
 		// View Healthcard
 		homePage.viewHealthCard();
 
-		// Validations
+		// Validationsde
 		logger.debug("Validations Begin...");
 
 		// Use of Promises to validate the text !
@@ -48,7 +48,6 @@ describe('Home Page Validations', function(){
 
 
 	it('Validate the details of the policyholder', async function(){
-
 		logger.info("Viewing Health Card Details...");
 		
 		// View Healthcard

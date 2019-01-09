@@ -4,18 +4,24 @@ exports.config={
 
 	capabilities:{
 		browserName: 'chrome',
+		'chromeOptions': {
+   		 'args': ['no-sandbox']
+  		}
 	},
 
 	framework: 'jasmine2',
 
 	// specs: ['../test_spec/login_h3u.js','../test_spec/homepage_h3u.js'],
-	specs: ['../test_spec/tools_trackers_h3u.js'],
+	// specs: ['../test_spec/tools_trackers_h3u.js'],
+	specs: ['../test_spec/homepage_h3u.js'],
 
 	restartBrowserBetweenTests: true,
 
 	jasmineNodeOpts:{
-		defaultTimeoutInterval: 100000	
+		defaultTimeoutInterval: 100000,
+		showColors: true	
 	},
+
 
 	onPrepare: function(){
 	    var AllureReporter = require('jasmine-allure-reporter');

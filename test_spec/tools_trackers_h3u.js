@@ -23,6 +23,7 @@ describe('Tools and Trackers Validations', function(){
 
 	it('I should be navigated to Tools and Trackers Page successfully', function(){
 		logger.info('Viewing Tools and Trackers Page...');
+		browser.debugger();
 		toolsTrackerPage.viewtoolsTrackers();
 		logger.info("Navigated to Tools and Trackers Page successfully...")
 	});
