@@ -2,6 +2,7 @@ exports.config={
 	directConnect: true,
 	// seleniumAddress: 'http://localhost:4444/wd/hub',
 
+
 	capabilities:{
 		browserName: 'chrome',
 		'chromeOptions': {
@@ -10,6 +11,7 @@ exports.config={
 	},
 
 	framework: 'jasmine2',
+	chromeDriver: './node_modules/protractor/selenium/chromedriver.exe',
 
 	// specs: ['../test_spec/login_h3u.js','../test_spec/homepage_h3u.js'],
 	// specs: ['../test_spec/tools_trackers_h3u.js'],
