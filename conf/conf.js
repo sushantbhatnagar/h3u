@@ -11,9 +11,9 @@ exports.config={
 
 	framework: 'jasmine2',
 
-	// specs: ['../test_spec/login_h3u.js','../test_spec/homepage_h3u.js'],
+	specs: ['../test_spec/login_h3u.js','../test_spec/homepage_h3u.js','../test_spec/homepage_h3u.js'],
 	// specs: ['../test_spec/tools_trackers_h3u.js'],
-	specs: ['../test_spec/homepage_h3u.js'],
+	// specs: ['../test_spec/homepage_h3u.js'],
 
 	restartBrowserBetweenTests: true,
 
