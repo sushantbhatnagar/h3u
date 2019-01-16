@@ -29,6 +29,7 @@ Below is a high level overview of the folder structure:
 
 # Pipeline
 
+	- Emailing the Job status
 	- Push this image in Docker repo via Jenkins
 	- Parallel_execution
 	- Kubernetes
