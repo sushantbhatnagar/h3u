@@ -27,14 +27,9 @@ Below is a high level overview of the folder structure:
 6. package.json - contains the dependencies of the project and node_modules is the directory that is created. 
 
 
-# Pipeline
+# Things To Do:
 
 	- Emailing the Job status
 	- Push this image in Docker repo via Jenkins
 	- Parallel_execution
 	- Kubernetes
-
-
-
-
-4398eb95791240f0b7872c4b3b3ea0c8
