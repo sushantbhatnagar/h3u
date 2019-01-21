@@ -34,8 +34,8 @@ describe('Login to h3u application', function(){
 	});
 
 	// After Hook
-	afterEach(function(){
-		browser.close();
-	});
+	// afterEach(function(){
+	// 	browser.close();
+	// });
 
 });

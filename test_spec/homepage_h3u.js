@@ -67,8 +67,8 @@ describe('Home Page Validations', function(){
 	});
 
 	// After Hook
-	afterEach(function(){
-		browser.close();
-	});
+	// afterEach(function(){
+	// 	browser.close();
+	// });
 
 });
