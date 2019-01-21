@@ -35,9 +35,9 @@
 
 	"toolsTrackersPageValidations":{
 		"memberName": "Sudhir  Mittal",
-		"bmiMeter" : "BMI Meter",
-		"saltMeter" : "Salt Meter",
-		"smokeMeter" : "Smoke Meter"
+		"bmiMeterValue" : "BMI Meter",
+		"saltMeterValue" : "Salt Meter",
+		"smokeMeterValue" : "Smoke Meter"
 	},
 
 	"homePageValidations": {

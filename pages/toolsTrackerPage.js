@@ -16,16 +16,16 @@ var toolsTrackerPage = function(){
 		return element(by.model(Objects.toolsTrackersPageLocators.member)).getText();
 	};
 
-	this.bmiMetertext = function(){
-		element(by.xpath(Objects.toolsTrackersPageLocators.bmiMeter)).getText();
+	this.bmiMeterText = function(){
+		return element(by.xpath(Objects.toolsTrackersPageLocators.bmiMeter)).getText();
 	};
 
-	this.saltMetertext = function(){
-		element(by.xpath(Objects.toolsTrackersPageLocators.saltMeter)).getText();
+	this.saltMeterText = function(){
+		return element(by.xpath(Objects.toolsTrackersPageLocators.saltMeter)).getText();
 	};
 
-	this.smokeMetertext = function(){
-		element(by.xpath(Objects.toolsTrackersPageLocators.smokeMeter)).getText();
+	this.smokeMeterText = function(){
+		return element(by.xpath(Objects.toolsTrackersPageLocators.smokeMeter)).getText();
 	};
 };
 

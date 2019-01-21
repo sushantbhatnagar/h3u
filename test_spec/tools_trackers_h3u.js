@@ -41,12 +41,16 @@ describe('Tools and Trackers Validations', function(){
 	});
 
 	it('3 boxes with texts as BMI Meter, Salt Meter and Smoke Meter should be displayed', function(){
+
+		logger.info('Viewing Tools and Trackers Page...');
+		toolsTrackerPage.viewtoolsTrackers();
 		
 		logger.info('Validating 3 boxes should be displayed...');
 
-		expect(Objects.toolsTrackerPage.bmiMetertext()).toEqual(Objects.toolsTrackersPageValidations.bmiMeter);
-		expect(Objects.toolsTrackerPage.saltMetertext()).toEqual(Objects.toolsTrackersPageValidations.saltMeter);
-		expect(Objects.toolsTrackerPage.smokeMetertext()).toEqual(Objects.toolsTrackersPageValidations.smokeMeter);
+
+		expect(toolsTrackerPage.bmiMeterText()).toEqual(Objects.toolsTrackersPageValidations.bmiMeterValue);
+		expect(toolsTrackerPage.saltMeterText()).toEqual(Objects.toolsTrackersPageValidations.saltMeterValue);
+		expect(toolsTrackerPage.smokeMeterText()).toEqual(Objects.toolsTrackersPageValidations.smokeMeterValue);
 
 		logger.info('Validating 3 boxes are displayed...');
 	});

@@ -1,8 +1,9 @@
 // Importing Other Pages into this js file
 var loginPage = require('../pages/loginPage');
-var homePage = require('../pages/homePage');
-var base = require('../pages/basePage');
 var Objects = require('../obj_repo/objects.json');
+var base = require('../pages/basePage');
+
+var homePage = require('../pages/homePage');
 
 var logger = require('../logger/customlogger.js');
 
