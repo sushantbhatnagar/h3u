@@ -27,11 +27,17 @@
 	},
 
 	"toolsTrackersPageLocators":{
-		"member": "selectedMember"
+		"member": "selectedMember",
+		"bmiMeter": "//*[text()='BMI Meter']",
+		"saltMeter": "//*[text()='Salt Meter']",
+		"smokeMeter": "//*[text()='Smoke Meter']"
 	},
 
 	"toolsTrackersPageValidations":{
-		"memberName": "Sudhir  Mittal"
+		"memberName": "Sudhir  Mittal",
+		"bmiMeter" : "BMI Meter",
+		"saltMeter" : "Salt Meter",
+		"smokeMeter" : "Smoke Meter"
 	},
 
 	"homePageValidations": {
