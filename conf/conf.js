@@ -2,24 +2,39 @@ exports.config={
 	directConnect: true,
 	// seleniumAddress: 'http://localhost:4444/wd/hub',
 
+	// Browser
 	capabilities:{
 		browserName: 'chrome',
 		'chromeOptions': {
    		 'args': ['no-sandbox']
-  		}
+  		},
+  		logName: 'Chrome - English',
+
 	},
 
+	// framework
 	framework: 'jasmine2',
 
-	specs: ['../test_spec/login_h3u.js','../test_spec/homepage_h3u.js','../test_spec/homepage_h3u.js'],
-	// specs: ['../test_spec/tools_trackers_h3u.js'],
-	// specs: ['../test_spec/homepage_h3u.js'],
+	// Specs Usage
+	// specs: ['../test_spec/login_h3u.js',
+	// 		'../test_spec/homepage_h3u.js',
+	// 		'../test_spec/homepage_h3u.js'
+	// ],
 
+	// Suites Specific
+	suites:{
+		smoke: ['../test_spec/smoke/smoke.js'],
+		regression: ['../test_spec/regression/regression.js'],
+		selected: ['../test_spec/login_h3u.js', '../test_spec/homepage_h3u.js'],
+		full: ['../test_spec/*.js']
+	},
+	
 	restartBrowserBetweenTests: true,
 
 	jasmineNodeOpts:{
 		defaultTimeoutInterval: 100000,
-		showColors: true	
+		showColors: true
+		
 	},
 
 

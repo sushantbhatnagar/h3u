@@ -30,6 +30,6 @@ Below is a high level overview of the folder structure:
 # Things To Do:
 
 	- Emailing the Job status
-	- Push this image in Docker repo via Jenkins
+	- Push this image in Docker repo via Jenkins - done
 	- Parallel_execution
 	- Kubernetes
