@@ -9,7 +9,6 @@ exports.config={
    		 'args': ['no-sandbox']
   		},
   		logName: 'Chrome - English',
-
 	},
 
 	// framework
@@ -26,7 +25,8 @@ exports.config={
 		smoke: ['../test_spec/smoke/smoke.js'],
 		regression: ['../test_spec/regression/regression.js'],
 		selected: ['../test_spec/login_h3u.js', '../test_spec/homepage_h3u.js'],
-		full: ['../test_spec/*.js']
+		full: ['../test_spec/*.js'],
+		salt: ['../test_spec/saltmeter.js']
 	},
 	
 	restartBrowserBetweenTests: true,
@@ -36,7 +36,6 @@ exports.config={
 		showColors: true
 		
 	},
-
 
 	onPrepare: function(){
 	    var AllureReporter = require('jasmine-allure-reporter');

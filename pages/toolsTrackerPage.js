@@ -27,6 +27,10 @@ var toolsTrackerPage = function(){
 	this.smokeMeterText = function(){
 		return element(by.xpath(Objects.toolsTrackersPageLocators.smokeMeter)).getText();
 	};
+
+	this.viewsaltMeterPage = function(){
+		element(by.xpath(Objects.toolsTrackersPageLocators.saltMeter)).click();
+	};
 };
 
 module.exports = new toolsTrackerPage();

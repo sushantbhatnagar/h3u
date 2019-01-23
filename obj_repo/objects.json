@@ -19,6 +19,10 @@
 		"toolsTrackers": "//*[@class='dashboard-container ng-scope']//*[text()='TOOLS & TRACKERS']"
 	},
 
+	"homePageValidations": {
+		"logout": "Logout"
+	},
+
 	"healthCardDetailsLocators":{
 		"policynumber": "//*[@id='printSectionId']/div[1]//div[4]/div[2]",
 		"validdate": "//*[@id='printSectionId']/div[1]//div[5]/div[2]",
@@ -40,8 +44,45 @@
 		"smokeMeterValue" : "Smoke Meter"
 	},
 
-	"homePageValidations": {
-		"logout": "Logout"
+	"saltMeterPageLocators": {
+		"bread": "saltmeterObj.breads",
+		"cereals": "saltmeterObj.cereal",
+		"curedMeat": "saltmeterObj.curedmeat",
+		"freshMeat": "saltmeterObj.freshmeat",
+		"freshFish": "saltmeterObj.freshfish",
+		"cheese": "saltmeterObj.cheese",
+		"dairyProducts": "saltmeterObj.dairyproducts",
+		"fatBased": "saltmeterObj.fatbased",
+		"spaghetti": "saltmeterObj.spaghetti",
+		"readyMadeSoup": "saltmeterObj.readymadesoup",
+		"sauce": "saltmeterObj.sauce",
+		"namkeen": "saltmeterObj.namkeen",
+		"sweets": "saltmeterObj.sweets",
+		"readyMeals": "saltmeterObj.readymeals",
+		"fastFood": "saltmeterObj.fastfood",
+		"howMuchSalt": "saltmeterObj.howmuchsalt",
+		"howMuchSaltTable": "saltmeterObj.howmuchsalttable",
+		"showResults": "Show my results"
+	},
+
+	"saltMeterPageData": {
+		"breadData": "2",
+		"cerealsData": "2",
+		"curedMeatData": "3",
+		"freshMeatData": "1",
+		"freshFishData": "3",
+		"cheeseData": "2",
+		"dairyProductsData": "3",
+		"fatBasedData": "1",
+		"spaghettiData": "1",
+		"readyMadeSoupData": "2",
+		"sauceData": "2",
+		"namkeenData": "1",
+		"sweetsData": "3",
+		"readyMealsData": "2",
+		"fastFoodData": "1",
+		"howMuchSaltData": "2",
+		"howMuchSaltTableData": "1"
 	}
 
 }
