@@ -3,15 +3,15 @@ node {
 	try {
 		stage('Preparation') {
 			
-			checkout scm
+			sh checkout scm
 
-			apt-get install xvfb
-			Xvfb :1 -screen 0 1600x1200x16 &
-			export DISPLAY=:1.0
+			sh apt-get install xvfb
+			sh Xvfb :1 -screen 0 1600x1200x16 &
+			sh export DISPLAY=:1.0
 		}
 
 		stage('Test') {
-			protractor conf/conf.js --suite=salt
+			sh protractor conf/conf.js --suite=salt
 		}
 
 		stage('Success'){
