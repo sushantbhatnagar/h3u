@@ -12,7 +12,7 @@ var ShowResultsPage = function(){
 
 	this.descriptionDisplayed = function(){
 		return element(by.css(Objects.showResultsPageLocators.description)).getText();
-	};
+	};!
 };
 
 module.exports = new ShowResultsPage();
