@@ -83,6 +83,11 @@
 		"fastFoodData": "1",
 		"howMuchSaltData": "2",
 		"howMuchSaltTableData": "1"
-	}
+	},
 
+	"showResultsPageLocators": {
+		"score": ".table tr>th:nth-child(1)",
+		"color": ".table tr>th:nth-child(2)",
+		"description": ".table tr>th:nth-child(3)" 
+	}
 }

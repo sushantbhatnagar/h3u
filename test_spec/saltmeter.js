@@ -5,6 +5,7 @@ var homePage = require('../pages/homePage');
 var toolsTrackerPage = require('../pages/toolsTrackerPage');
 var Objects = require('../obj_repo/objects.json');
 var saltMeterPage = require('../pages/saltMeterPage');
+var showResultsPage = require('../pages/showResultsPage');
 var logger = require('../logger/customlogger.js');
 
 // Feature File
@@ -26,31 +27,21 @@ describe('Salt Meter', function(){
 		toolsTrackerPage.viewsaltMeterPage();
 		logger.info('Navigated to Salt Meter Page');
 
+		logger.info('Filling salt Meter Page with valid values');
+		saltMeterPage.fillSaltMeterPage();
+
 	});
 
-	it('I should be able to see the score, color and description of my salt consumption', function(){	
-		saltMeterPage.slicesBread(Objects.saltMeterPageData.breadData);
-		saltMeterPage.portionsBreakfast(Objects.saltMeterPageData.cerealsData);
-		saltMeterPage.portionsCuredMeat(Objects.saltMeterPageData.curedMeatData);
-		saltMeterPage.freshMeat(Objects.saltMeterPageData.freshMeatData);
-
-		saltMeterPage.freshFish(Objects.saltMeterPageData.freshFishData);
-		saltMeterPage.portionsCheese(Objects.saltMeterPageData.dairyProductsData);
-		saltMeterPage.portionsFatBased(Objects.saltMeterPageData.fatBasedData);
-		saltMeterPage.portionsBakedBeans(Objects.saltMeterPageData.spaghettiData);
-
-		saltMeterPage.readyMadeSoup(Objects.saltMeterPageData.readyMadeSoupData);
-		saltMeterPage.howMuchSauce(Objects.saltMeterPageData.sauceData);
-		saltMeterPage.savouryNamkeen(Objects.saltMeterPageData.namkeenData);
-		saltMeterPage.cakesPastries(Objects.saltMeterPageData.sweetsData);
-
-		saltMeterPage.readyMeals(Objects.saltMeterPageData.readyMealsData);
-		saltMeterPage.fastFood(Objects.saltMeterPageData.fastFoodData);
-		saltMeterPage.howMuchSaltPerson(Objects.saltMeterPageData.howMuchSaltData);
-		saltMeterPage.howMuchSaltTable(Objects.saltMeterPageData.howMuchSaltTableData);
-
-		browser.sleep(3000);
+	it('I should be able to see the score, color and description of my salt consumption', async function(){	
 		
-		saltMeterPage.showResults();
+		var scoreText = await showResultsPage.scoreDisplayed();
+		expect(scoreText).toEqual('SCORE');
+
+		var colorColor = await showResultsPage.colorDisplayed();
+		expect(colorColor).toEqual('COLOR');
+
+		var descriptionText = await showResultsPage.descriptionDisplayed();
+		expect(descriptionText).toEqual('DESCRIPTION');
+
 	});
 });

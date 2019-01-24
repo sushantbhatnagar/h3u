@@ -74,6 +74,31 @@ var SaltMeterPage = function(){
 	this.showResults = function(){
 		element(by.buttonText(Objects.saltMeterPageLocators.showResults)).click();
 	};
+
+	this.fillSaltMeterPage = function(){
+		this.slicesBread(Objects.saltMeterPageData.breadData);
+		this.portionsBreakfast(Objects.saltMeterPageData.cerealsData);
+		this.portionsCuredMeat(Objects.saltMeterPageData.curedMeatData);
+		this.freshMeat(Objects.saltMeterPageData.freshMeatData);
+
+		this.freshFish(Objects.saltMeterPageData.freshFishData);
+		this.portionsCheese(Objects.saltMeterPageData.dairyProductsData);
+		this.portionsFatBased(Objects.saltMeterPageData.fatBasedData);
+		this.portionsBakedBeans(Objects.saltMeterPageData.spaghettiData);
+
+		this.readyMadeSoup(Objects.saltMeterPageData.readyMadeSoupData);
+		this.howMuchSauce(Objects.saltMeterPageData.sauceData);
+		this.savouryNamkeen(Objects.saltMeterPageData.namkeenData);
+		this.cakesPastries(Objects.saltMeterPageData.sweetsData);
+
+		this.readyMeals(Objects.saltMeterPageData.readyMealsData);
+		this.fastFood(Objects.saltMeterPageData.fastFoodData);
+		this.howMuchSaltPerson(Objects.saltMeterPageData.howMuchSaltData);
+		this.howMuchSaltTable(Objects.saltMeterPageData.howMuchSaltTableData);
+		
+		this.showResults();
+		browser.sleep(1000);
+	}
 };
 
 module.exports = new SaltMeterPage();
