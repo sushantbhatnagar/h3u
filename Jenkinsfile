@@ -1,7 +1,7 @@
 node {
 	
 		stage('Preparation'){		
-			sh 'checkout scm'
+			checkout scm
 
 			sh 'apt-get install xvfb'
 			sh 'Xvfb :1 -screen 0 1600x1200x16 &'
