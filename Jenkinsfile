@@ -1,8 +1,6 @@
 node {
 	
-	try {
-		stage('Preparation'){
-			
+		stage('Preparation'){		
 			sh 'checkout scm'
 
 			sh 'apt-get install xvfb'
@@ -17,5 +15,5 @@ node {
 		stage('Success'){
 			echo 'Tests executed successfully'
 		}
-	}
+	
 }
