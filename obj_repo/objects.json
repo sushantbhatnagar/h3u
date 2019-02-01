@@ -88,6 +88,22 @@
 	"showResultsPageLocators": {
 		"score": ".table tr>th:nth-child(1)",
 		"color": ".table tr>th:nth-child(2)",
-		"description": ".table tr>th:nth-child(3)" 
+		"description": ".table tr>th:nth-child(3)",
+		"saltScore": "//*[@ng-show='showingResult']/h3/strong[1]",
+		"healthStatus": "//*[@ng-show='showingResult']/h3/strong[2]"
+	},
+
+	"saltScoreColor": {
+		"zeroToSix": "green",
+		"sixToEight": "yellow",
+		"eightToTen": "orange",
+		"tenPlus": "red"
+	},
+
+	"healthyDescription": {
+		"zeroToSix": "Healthy",
+		"sixToEight": "Normal",
+		"eightToTen": "Slightly Higher",
+		"tenPlus": "Alarming"
 	}
 }

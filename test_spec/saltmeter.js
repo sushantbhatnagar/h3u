@@ -8,6 +8,7 @@ var saltMeterPage = require('../pages/saltMeterPage');
 var showResultsPage = require('../pages/showResultsPage');
 var logger = require('../logger/customlogger.js');
 
+
 // Feature File
 describe('Salt Meter', function(){
 

@@ -9,6 +9,7 @@ exports.config={
    		 'args': ['no-sandbox']
   		},
   		logName: 'Chrome - English',
+  		name: 'Zalenium Chrome Tests'
 	},
 
 	// framework
@@ -26,16 +27,19 @@ exports.config={
 		regression: ['../test_spec/regression/regression.js'],
 		selected: ['../test_spec/login_h3u.js', '../test_spec/homepage_h3u.js'],
 		full: ['../test_spec/*.js'],
-		salt: ['../test_spec/saltmeter.js']
+		salt: ['../test_spec/saltmeter.js'],
+		zalenium: ['../test_spec/smoke/smoke.js','../test_spec/regression/regression.js']
 	},
 	
 	restartBrowserBetweenTests: true,
 
 	jasmineNodeOpts:{
+		allScriptsTimeout: 250000,
 		defaultTimeoutInterval: 100000,
 		showColors: true
 		
 	},
+
 
 	onPrepare: function(){
 	    var AllureReporter = require('jasmine-allure-reporter');

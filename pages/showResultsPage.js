@@ -9,10 +9,9 @@ var ShowResultsPage = function(){
 	this.colorDisplayed = function(){
 		return element(by.css(Objects.showResultsPageLocators.color)).getText();
 	};
-
 	this.descriptionDisplayed = function(){
 		return element(by.css(Objects.showResultsPageLocators.description)).getText();
-	};!
+	};
 };
 
 module.exports = new ShowResultsPage();

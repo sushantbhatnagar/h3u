@@ -98,7 +98,7 @@ var SaltMeterPage = function(){
 		
 		this.showResults();
 		browser.sleep(1000);
-	}
+	};
 };
 
 module.exports = new SaltMeterPage();
