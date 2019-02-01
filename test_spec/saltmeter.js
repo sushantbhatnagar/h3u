@@ -33,7 +33,7 @@ describe('Salt Meter', function(){
 
 	});
 
-	xit('I should be able to see the score, color and description of my salt consumption', async function(){	
+	it('I should be able to see the score, color and description of my salt consumption', async function(){	
 		
 		var scoreText = await showResultsPage.scoreDisplayed();
 		expect(scoreText).toEqual('SCORE');
