@@ -97,7 +97,7 @@
 		"zeroToSix": "green",
 		"sixToEight": "yellow",
 		"eightToTen": "orange",
-		"tenPlus": "red"
+		"tenPlus": "rgba(255, 0, 0, 1)"
 	},
 
 	"healthyDescription": {

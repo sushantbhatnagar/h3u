@@ -12,6 +12,14 @@ var ShowResultsPage = function(){
 	this.descriptionDisplayed = function(){
 		return element(by.css(Objects.showResultsPageLocators.description)).getText();
 	};
+
+	this.saltScore = function(){
+		return element(by.xpath(Objects.showResultsPageLocators.saltScore)).getText();
+	};
+
+	this.healthStatus = function(){
+		return element(by.xpath(Objects.showResultsPageLocators.healthStatus)).getText();
+	};
 };
 
 module.exports = new ShowResultsPage();

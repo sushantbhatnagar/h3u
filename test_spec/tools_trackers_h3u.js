@@ -47,7 +47,6 @@ describe('Tools and Trackers Validations', function(){
 		
 		logger.info('Validating 3 boxes should be displayed...');
 
-
 		expect(toolsTrackerPage.bmiMeterText()).toEqual(Objects.toolsTrackersPageValidations.bmiMeterValue);
 		expect(toolsTrackerPage.saltMeterText()).toEqual(Objects.toolsTrackersPageValidations.saltMeterValue);
 		expect(toolsTrackerPage.smokeMeterText()).toEqual(Objects.toolsTrackersPageValidations.smokeMeterValue);
