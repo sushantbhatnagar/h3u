@@ -49,14 +49,16 @@ describe('Salt Meter', function(){
 		var saltResult = await showResultsPage.saltScore();
 		expect(saltResult).toMatch(/\d{2}\.\d{2}/);
 
-		expect(saltResult.getCssValue('color')).toBe(Objects.saltScoreColor.tenPlus);
+		var saltColor = await showResultsPage.saltScore().getCssValue('color');
+		expect(saltColor).toBe(Objects.saltScoreColor.tenPlus);
 	});
 
 	it('I should be able to see the health Result and the color of the health status', async function(){
 		var healthResult = await showResultsPage.healthStatus();
 		expect(healthResult).toMatch(/\w*/);
 
-		expect(healthResult.getCssValue('color')).toBe(Objects.saltScoreColor.tenPlus);
+		var healthResultColor = await showResultsPage.healthStatus().getCssValue('color');
+		expect(healthResultColor).toBe(Objects.saltScoreColor.tenPlus);
 	});
 
 });
