@@ -33,7 +33,7 @@ describe('Salt Meter', function(){
 
 	});
 
-	xit('I should be able to see the score, color and description of my salt consumption', async function(){	
+	it('I should be able to see the score, color and description of my salt consumption', async function(){	
 		
 		var scoreText = await showResultsPage.scoreDisplayed();
 		expect(scoreText).toEqual('SCORE');
@@ -45,7 +45,7 @@ describe('Salt Meter', function(){
 		expect(descriptionText).toEqual('DESCRIPTION');
 	});
 
-	xit('I should be able to see the Salt score and the color of the salt', async function(){
+	it('I should be able to see the Salt score and the color of the salt', async function(){
 		var saltResult = await showResultsPage.saltScore();
 		expect(saltResult).toMatch(/\d{2}\.\d{2}/);
 
@@ -53,7 +53,7 @@ describe('Salt Meter', function(){
 		expect(saltColor).toBe(Objects.saltScoreColor.tenPlus);
 	});
 
-	xit('I should be able to see the health Result and the color of the health status', async function(){
+	it('I should be able to see the health Result and the color of the health status', async function(){
 		var healthResult = await showResultsPage.healthStatus();
 		expect(healthResult).toMatch(/\w*/);
 
