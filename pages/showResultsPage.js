@@ -20,6 +20,10 @@ var ShowResultsPage = function(){
 	this.healthStatus = function(){
 		return element(by.xpath(Objects.showResultsPageLocators.healthStatus)).getText();
 	};
+
+	this.calculateAgain = function(){
+		return element(by.buttonText(Objects.showResultsPageLocators.calculateAgain));
+	};
 };
 
 module.exports = new ShowResultsPage();
