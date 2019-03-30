@@ -1,3 +1,4 @@
 *.md
 /logs/*.log
 allure-results/*
+node_modules
