@@ -109,6 +109,7 @@
 	},
 
 	"backButtonPageLocators": {
-		"logoutText": "//*[@id='slidemenu']/ul/li[8]/a"
+		"logoutText": "//*[@id='slidemenu']/ul/li[8]/a",
+		"3boxes": "card"
 	}
 }
