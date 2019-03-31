@@ -9,7 +9,9 @@ exports.config={
    		 'args': ['no-sandbox']
   		},
   		logName: 'Chrome - English',
-  		name: 'Zalenium Chrome Tests'
+  		sharedTestFiles: true,
+  		maxInstances: 2
+//  		name: 'Zalenium Chrome Tests'
 	},
 
 	// framework
@@ -28,6 +30,7 @@ exports.config={
 		selected: ['../test_spec/login_h3u.js', '../test_spec/homepage_h3u.js'],
 		full: ['../test_spec/*.js'],
 		salt: ['../test_spec/saltmeter.js'],
+		backButton: ['../test_spec/backButton.js'],
 		zalenium: ['../test_spec/smoke/smoke.js','../test_spec/regression/regression.js']
 	},
 	

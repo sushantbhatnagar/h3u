@@ -106,5 +106,9 @@
 		"sixToEight": "Normal",
 		"eightToTen": "Slightly Higher",
 		"tenPlus": "Alarming"
+	},
+
+	"backButtonPageLocators": {
+		"logoutText": "//*[@id='slidemenu']/ul/li[8]/a"
 	}
 }
